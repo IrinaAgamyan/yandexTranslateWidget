@@ -5,33 +5,32 @@
         textarea {
             width: 100%;
             border: 1px solid #aaa;
-            padding: 0.3rem;
+            padding: 5px;
             box-sizing: border-box;
         }
         button {
             background: transparent;
             border: 1px solid #aaa;
-            padding: 0.3rem 1rem;
-            margin-top: 1rem;
+            padding: 5px 15px;
+            margin-top: 15px;
         }
         p, div {
             text-align: right;
         }
         select {
-            height: 1.5rem;
+            height: 24px;
             margin: 0;
-            padding: 0 0.3rem;
+            padding: 0 5px;
         }
     </style>
 </head>
 <body>
-<div id="main">
-    <p><span>From </span>
-        <select id="langFrom">
-        </select>
+<form id="main">
+    <p>
+        <span>From </span>
+        <select id="langFrom"></select>
         <span> to </span>
-        <select id="langTo">
-        </select>
+        <select id="langTo"></select>
     </p>
     <div>
         <textarea rows="7" id="textToTranslate" placeholder="Please, enter your text here..."></textarea>
@@ -42,7 +41,7 @@
     <div>
         <button id="translate">Translate</button>
     </div>
-</div>
+</form>
 <script src="//js.jotform.com/JotFormCustomWidget.min.js"></script>
 <script type="text/javascript">
     var apiKey;
